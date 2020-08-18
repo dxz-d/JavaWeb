@@ -28,7 +28,6 @@ public class HelloServlet extends HttpServlet {
         System.out.println("第一个Servlet的doGet请求，Hello World 01");
         // 相应流
         PrintWriter writer = resp.getWriter();
-        /*writer.println("第一个Servlet的doGet请求，Hello World");*/
         writer.println("HelloWorld");
     }
 
