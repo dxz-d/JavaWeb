@@ -49,4 +49,13 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/dispatcher</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>writeProperties</servlet-name>
+        <servlet-class>com.kuang.servlet.WritePropServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>writeProperties</servlet-name>
+        <url-pattern>/writeProperties</url-pattern>
+    </servlet-mapping>
 </web-app>
