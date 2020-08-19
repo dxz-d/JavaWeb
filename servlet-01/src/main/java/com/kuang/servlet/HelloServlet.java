@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 /**
  * @description  第一个servlet程序
  * 创建一个servlet的继承关系
+ * HelloServelt ————》  HttpServlet  -———》   GenericServlet  ————》   Servlet,ServletConfig,Serialise
  * @author diaoxiuze
  * @date 2020/8/18 18:18
  */
