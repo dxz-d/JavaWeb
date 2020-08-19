@@ -14,4 +14,16 @@
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
+    <!--优先级问题，指定了固有的映射路径优先级最高，如果找不到就会走默认的处理请求-->
+    <!--404servlet-->
+    <servlet>
+        <servlet-name>error</servlet-name>
+        <servlet-class>com.kuang.servlet.ErrorServlet</servlet-class>
+    </servlet>
+    <!--配置servlet类的映射、请求路径-->
+    <servlet-mapping>
+        <servlet-name>error</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
 </web-app>
