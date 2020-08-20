@@ -13,6 +13,7 @@
         <module>servlet-02</module>
         <module>response</module>
         <module>request</module>
+        <module>cookie</module>
     </modules>
 
     <!--所有依赖-->

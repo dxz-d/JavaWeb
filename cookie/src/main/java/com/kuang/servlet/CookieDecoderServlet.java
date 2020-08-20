@@ -38,17 +38,17 @@ public class CookieDecoderServlet extends HttpServlet {
             writer.write("你上次访问的时间是：");
 
             for (int i = 0; i < cookies.length; i++) {
-        Cookie cookie = cookies[i];
-        // 获取cookie的名字
-        if (cookie.getName().equals("name")) {
-        // 获取cookie中的名字
-        System.out.println(cookie.getValue());
-        // 解码
-        writer.write(URLDecoder.decode(cookie.getValue(), "utf-8"));
-        }
-        }
+                Cookie cookie = cookies[i];
+                // 获取cookie的名字
+                if (cookie.getName().equals("name")) {
+                    // 获取cookie中的名字
+                    System.out.println(cookie.getValue());
+                    // 解码
+                    writer.write(URLDecoder.decode(cookie.getValue(), "utf-8"));
+                }
+            }
         } else {
-        writer.write("这是您第一次访问本站！");
+            writer.write("这是您第一次访问本站！");
         }
 
         // 编码
@@ -56,10 +56,10 @@ public class CookieDecoderServlet extends HttpServlet {
 
         resp.addCookie(cookie);
 
-        }
+    }
 
-@Override
-protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doGet(req, resp);
-        }
-        }
+    }
+}
