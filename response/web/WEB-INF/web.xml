@@ -12,4 +12,13 @@
         <servlet-name>file</servlet-name>
         <url-pattern>/down</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>image</servlet-name>
+        <servlet-class>com.kuang.servlet.ImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>image</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
 </web-app>
