@@ -15,6 +15,7 @@
         <module>request</module>
         <module>cookie</module>
         <module>jsp</module>
+        <module>filter</module>
     </modules>
 
     <!--所有依赖-->

@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cookie" />
+        <module name="response" />
+        <module name="filter" />
         <module name="jsp" />
         <module name="servlet-02" />
         <module name="servlet-01" />
         <module name="request" />
-        <module name="response" />
+        <module name="cookie" />
       </profile>
     </annotationProcessing>
   </component>
