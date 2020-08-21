@@ -31,4 +31,37 @@
         <servlet-name>cookieDecoder</servlet-name>
         <url-pattern>/cookieDecoder</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session</servlet-name>
+        <servlet-class>com.kuang.servlet.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>session</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session01</servlet-name>
+        <servlet-class>com.kuang.servlet.Session01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>session01</servlet-name>
+        <url-pattern>/session01</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>destorySession</servlet-name>
+        <servlet-class>com.kuang.servlet.DestorySession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>destorySession</servlet-name>
+        <url-pattern>/destorySession</url-pattern>
+    </servlet-mapping>
+
+    <!--设置Session默认的失效时间-->
+    <session-config>
+        <!--15分钟后Session自动失效，以分钟为单位-->
+        <session-timeout>1</session-timeout>
+    </session-config>
 </web-app>
