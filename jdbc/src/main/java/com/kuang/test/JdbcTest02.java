@@ -32,7 +32,7 @@ public class JdbcTest02 {
         preparedStatement.setString(3, "男");
         preparedStatement.setInt(4,24);
 
-        // 5.执行sql
+        // 5.执行sql  受影响的行数，增删改
         int i = preparedStatement.executeUpdate();
         if (i>0) {
             System.out.println("插入成功");

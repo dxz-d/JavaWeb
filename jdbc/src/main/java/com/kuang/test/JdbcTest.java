@@ -26,9 +26,6 @@ class JdbcTest {
         // 4.编写sql
         String sql = "select * from t_student";
 
-        // 受影响的行数，增删改
-        // int i = statement.executeUpdate(sql);
-
         // 5.执行查询sql，返回一个Result：结果集
         ResultSet resultSet = statement.executeQuery(sql);
 
