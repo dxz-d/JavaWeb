@@ -14,21 +14,48 @@
 
 
     <!--配置filter-->
-    <filter>
+    <!--<filter>
         <filter-name>character</filter-name>
         <filter-class>com.kuang.filter.CharacterEncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>character</filter-name>
-        <!--只要是/servlet的任何请求，会经过这个过滤器-->
-        <!--目前只能过滤所有-->
+        &lt;!&ndash;只要是/servlet的任何请求，会经过这个过滤器&ndash;&gt;
+        &lt;!&ndash;目前只能过滤所有&ndash;&gt;
         <url-pattern>/*</url-pattern>
-        <!--过滤所有-->
-        <!--<url-pattern>/servlet</url-pattern>-->
+        &lt;!&ndash;过滤所有&ndash;&gt;
+        &lt;!&ndash;<url-pattern>/servlet</url-pattern>&ndash;&gt;
     </filter-mapping>
 
-    <!--注册监听器-->
+    &lt;!&ndash;注册监听器&ndash;&gt;
     <listener>
         <listener-class>com.kuang.listerner.OnlineListener</listener-class>
-    </listener>
+    </listener>-->
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.kuang.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/servlet/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.kuang.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/servlet/logout</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>sysFilter</filter-name>
+        <filter-class>com.kuang.filter.SysFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sysFilter</filter-name>
+        <url-pattern>/sys/*</url-pattern>
+    </filter-mapping>
 </web-app>
