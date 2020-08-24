@@ -11,6 +11,7 @@
         <module name="jsp" />
         <module name="servlet-02" />
         <module name="servlet-01" />
+        <module name="jdbc" />
         <module name="request" />
         <module name="cookie" />
       </profile>
